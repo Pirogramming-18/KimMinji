@@ -1,4 +1,11 @@
 /* 선택자(selector) */
+.blind {
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
 
 #header-center {
     margin: 0 auto;
@@ -10,6 +17,12 @@
     display: inline-block;
 }
 
+/*
+#header-center h1 {
+    자손 선택자
+}
+*/
+
 #header-search h2 {
     display: none;
 }
@@ -18,8 +31,3 @@
     width: 520px;
 }
 
-/*
-#header-center h1 {
-    자손 선택자
-}
-*/
