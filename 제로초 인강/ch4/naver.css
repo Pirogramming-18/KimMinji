@@ -74,7 +74,7 @@
     border: none;
     padding: 0;
     background: #03cf5d;
-    position: absolute;
+    position: absolute; /*absolute랑 relative는 완전 다르다*/
     right: -2px;
     top: -2px;
 
