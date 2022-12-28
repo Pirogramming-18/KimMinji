@@ -1,0 +1,221 @@
+ol, ul {
+    list-style: none;
+}
+
+input {
+    border: none;
+    background-color: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #2b3137;
+}
+
+#header-center {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+#header-logo img {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-top: -8px;
+}
+
+
+#header-option {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin-top: 11px;
+    margin-left: 100px;
+    color: white;
+}
+
+#header-option li {
+    float: left;
+    padding-right: 20px;
+    height: 35px;
+}
+
+#header-option li span {
+    color: #777;
+}
+
+#header-search {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 18px;
+    margin-right: 296px;
+}
+
+#header-search input {
+    width: 242px;
+    height: 39px;
+    padding: 10px;
+    background-color: rgba(144, 144, 144, 0.35);
+    border-radius: 6px;
+}
+
+#header-search input::placeholder {
+    color: #e4e4e4;
+    font-size: 16px;
+}
+
+#header-search-slash {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 29px;
+    margin-right: 305px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    font-size: 10px;
+    text-align: center;
+    color: #e4e4e4;
+}
+
+#header-sign {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    margin-top: 25px;
+    margin-right: 145px;
+}
+
+#header-sign span {
+    padding: 6px;
+    border-left: 20px;
+}
+
+#signin {
+    margin-right: 5px;
+
+}
+
+#signup {
+    width: 30px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+main {
+    width: 1080px;
+    text-align: center;
+    align-items: center;
+}
+
+#main-about {
+    text-align: left;
+    position: absolute;
+    left: 0;
+    padding-left: 270px;
+    padding-top: 80px;
+    font-family: 'Segoe UI Emoji';
+}
+
+#main-about h1 {
+    width: 500px;
+    color: white;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+#main-about h2 {
+    width: 490px;
+    color: #95999c;
+    font-size: 21px;
+    
+}
+
+#main-about h2 span {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #95999c;
+}
+
+#main-signup {
+    position: absolute;
+    top: 67px;
+    right: 273px;
+    width: 390px;
+    height: 464px;
+    background-color: white;
+    border-radius: 7px;
+    border: 0;
+    padding: 22px;
+    text-align: left;
+}
+
+#main-signup input {
+    border: none;
+    width: 380px;
+    height: 42px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#main-signup input:focus {
+    background-color: #e8f0fe;
+}
+
+#main-signup p {
+    font-size: 11.7px;
+}
+
+.blue {
+    color: #5899e4;
+}
+
+#main-signup button {
+    width: 380px;
+    height: 68px;
+    background-color: #2ebc4f;
+    border-radius: 5px;
+    font-size: 15.5px;
+    font-weight: bold;
+    color:white;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#footer-img img {
+    height: 190px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 150px;
+    margin-bottom: -30px;
+}
