@@ -5,6 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 
 #fixed {
@@ -38,8 +39,13 @@ html, body {
     width: 1080px;
 }
 
+header {
+    height: 170px;
+}
+
 #header-top {
     float: right;
+    margin-top: 8px;
 }
 
 #header-top span {
@@ -51,9 +57,10 @@ html, body {
 
 #header-search {
     clear: both;
+    padding-top: 12px;
 }
 
-#header-search a{
+#header-search a {
     text-decoration: none;
 }
 
@@ -67,7 +74,8 @@ html, body {
     background: url(./sp_search.png) -4px -4px no-repeat;
     vertical-align: middle;
     position: relative;
-    top: -6px;
+    top: -5px;
+    left: 1px;
 }
 
 #header-search h1 span {
@@ -105,15 +113,13 @@ html, body {
 
 #header-search fieldset button {
     width: 49px;
-    height:49px;
+    height: 49px;
     border: none;
     padding: 0;
     background: #03cf5d;
     position: absolute;
     right: -2px;
-    top: -2px;
-
-    
+    top: -2px;    
 }
 
 #search-image {
@@ -126,9 +132,16 @@ html, body {
     margin: 14px;
 }
 
+nav {
+    height: 46px;
+    border-top: 1px solid #f1f3f6;
+    border-bottom: 1px solid #d1d8e4;
+}
+
 nav ul {
+    display: inline-block;
     margin: 0;
-    padding: 0;
+    padding: 16px 0 0 4px;
     list-style: none;
 }
 
@@ -142,12 +155,12 @@ nav li:first-child span:first-child {
     margin-left: 0px;
 }
 
-nav li span:first-child:first-child:first-child {
+nav li span:first-child{
     height: 16px;
     display: inline-block;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
     background-repeat: no-repeat;
-    margin-left: 14px;
+    margin-left: 10px;
 }
 
 nav li:nth-child(2) span:first-child {
@@ -175,3 +188,22 @@ nav li:nth-child(6) span:first-child {
     background-position: -70px -285px;
 }
 
+.nav-divider {
+    display: inline-block;
+    margin: 18px 16px 0;
+    width: 1px;
+    height: 14px;
+    background: #ebeef3;
+}
+
+#search-ranking {
+    position: absolute;
+    top: 16px;
+    right: 100px;
+}
+
+#rank-number {
+    margin-top: -9px;
+    color: 00ab33;
+    font-size: 16px;
+}
