@@ -1,0 +1,5 @@
+@import "reset.css";
+
+.row img {
+    max-width: 75%;
+}
