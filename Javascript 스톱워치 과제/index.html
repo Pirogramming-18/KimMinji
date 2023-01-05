@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스톱워치</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c215d26fd2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="prj__title">
+        <i class="fa-solid fa-stopwatch"></i>
+        <h3>피로그래밍 스톱워치</h3>
+    </div>
+    <div class="stopwatch__box">
+        <p id="stopwatch"><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <div class="stopwatch__btns">
+            <button id="btn__start">start</button>
+            <button id="btn__stop">stop</button>
+            <button id="btn__reset">reset</button>
+        </div>
+    </div>
+    <div class="record">
+        <div class="record__title">
+            <div class="check__all">
+                <input type="checkbox" id="check__btn">
+                <label for="check__btn"></label>
+            </div>
+            <h4>구간 기록</h4>
+            <button id="remove" onClick="javascript:folder_del('list_area');"><i class="fa-solid fa-trash" ></i></button>
+        </div>
+        <ul class="record__list">
+            <li class="list__item">
+                <div class="check">
+                    <input type="checkbox" id="check__btn">
+                    <label for="check__btn"></label>
+                </div>
+                <span class = "time__stamp">00 : 00</span>
+                <span> </span>
+            </li>
+            <li class="list-item">
+                <div class="check">
+                    <input type="checkbox" class="check__btn">
+                    <label for="check__btn"></label>
+                </div>
+                <span>00 : 00</span>
+                <span> </span>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
+
