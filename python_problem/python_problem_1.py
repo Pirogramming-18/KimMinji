@@ -37,7 +37,9 @@ def playerB():
 while True:
     playerA()
     if num == 31:
+        print('playerB win!')
         break
     playerB()
     if num == 31:
+        print('playerA win!')
         break
