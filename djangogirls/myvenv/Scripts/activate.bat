@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\김민지\Desktop\학교\2022\피로그래밍18기\파이썬코딩도장\KimMinji\djangogirls\myvenv
+set VIRTUAL_ENV=C:\Users\김민지\Desktop\230110\KimMinji\djangogirls\myvenv
 
 if not defined PROMPT set PROMPT=$P$G
 
@@ -25,7 +25,6 @@ if defined _OLD_VIRTUAL_PATH set PATH=%_OLD_VIRTUAL_PATH%
 if not defined _OLD_VIRTUAL_PATH set _OLD_VIRTUAL_PATH=%PATH%
 
 set PATH=%VIRTUAL_ENV%\Scripts;%PATH%
-set VIRTUAL_ENV_PROMPT=(myvenv) 
 
 :END
 if defined _OLD_CODEPAGE (
