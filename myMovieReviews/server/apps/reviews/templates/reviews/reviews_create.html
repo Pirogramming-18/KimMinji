@@ -1,45 +1,71 @@
-<a href="/">myMoviereviews</a>
-<a href="/reviews/create">Add a New Review</a>
-
-<h2>Movie review 🍿</h2>
-
-<form action="/reviews/create" method="post">
-  {% csrf_token %}
-  <span>제목:</span>
-  <input name="title" />
-  <br />
-  <br />
-  <span>개봉년도:</span>
-  <input name="year" />
-  <br />
-  <br />
-  <span>장르:</span>
-  <input name="genre" />
-  <br />
-  <br />
-  <span>별점:</span>
-  <input name="rating" />
-  <br />
-  <br />
-  <span>러닝타임:</span>
-  <input name="running_time" />
-  <br />
-  <br />
-  <span>리뷰:</span>
-  <br />
-  <br />
-  <textarea name="content"></textarea>
-  <br />
-  <br />
-  <span>감독:</span>
-  <input name="director" />
-  <br />
-  <br />
-  <span>주연:</span>
-  <input name="main_actors" />
-  <br />
-  <br />
-  <div>
-    <input type="submit" value="Save" />
-  </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Movie Review</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">my<span>Movie</span>reviews</a></h1>
+      <a href="/reviews/create">Add a New Review</a>
+    </header>
+    <div class="write">
+      <div class="write-title">
+        <h2><span>Movie</span> review 🍿</h2>
+        <div class="line"></div>
+      </div>
+      <div class="write-form">
+        <form action="/reviews/create" method="post">
+          {% csrf_token %}
+          <span>제목:</span>
+          <input name="title" />
+          <br />
+          <br />
+          <span>개봉년도:</span>
+          <input class="input-box-small" name="year" />
+          <br />
+          <br />
+          <span>장르:</span>
+          <input name="genre" />
+          <br />
+          <br />
+          <span>별점:</span>
+          <input class="input-box-small" name="rating" />
+          <br />
+          <br />
+          <span>러닝타임:</span>
+          <input name="running_time" />
+          <br />
+          <br />
+          <span>리뷰:</span>
+          <br />
+          <br />
+          <textarea name="content"></textarea>
+          <br />
+          <br />
+          <span>감독:</span>
+          <input name="director" />
+          <br />
+          <br />
+          <span>주연:</span>
+          <input name="main_actors" />
+          <br />
+          <br />
+          <div class="save-btn">
+            <input type="submit" value="Save" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

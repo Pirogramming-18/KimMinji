@@ -1,19 +1,50 @@
-<a href="/">myMoviereviews</a>
-<a href="/reviews/create">Add a New Review</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Movie Review</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">my<span>Movie</span>reviews</a></h1>
+      <a href="/reviews/create">Add a New Review</a>
+    </header>
+    <div class="details">
+      <div class="details-header">
+        <h2>{{ review.title }}</h2>
+        <div class="details-buttons">
+          <a href="/reviews/{{ review.id }}/update">수정</a>
 
-<h2>{{ review.title }}</h2>
-
-<a href="/reviews/{{ review.id }}/update">수정</a>
-
-<form action="/reviews/{{ review.id }}/delete" method="post">
-  {% csrf_token %}
-  <input type="submit" value="삭제" />
-</form>
-
-<p>개봉년도: {{ review.year }}</p>
-<p>감독: {{ review.director }}</p>
-<p>주연: {{ review.main_actors }}</p>
-<p>장르: {{ review.genre }}</p>
-<p>별점: {{ review.rating }}</p>
-<p>러닝타임: {{ review.running_time }}</p>
-<p>{{ review.content }}</p>
+          <form action="/reviews/{{ review.id }}/delete" method="post">
+            {% csrf_token %}
+            <input type="submit" value="삭제" />
+          </form>
+        </div>
+      </div>
+      <div class="details-box1">
+        <div class="poster"></div>
+        <div class="details-about">
+          <p>개봉년도: <span>{{ review.year }}</span></p>
+          <p>감독: <span>{{ review.director }}</span></p>
+          <p>주연: <span>{{ review.main_actors }}</span></p>
+          <p>장르: <span>{{ review.genre }}</span></p>
+          <p>별점: <span>{{ review.rating }}</span></p>
+          <p>러닝타임: <span>{{ review.running_time }}</span></p>
+        </div>
+      </div>
+      <div class="details-box2">
+        <p>{{ review.content }}</p>
+      </div>
+    </div>
+  </body>
+</html>
