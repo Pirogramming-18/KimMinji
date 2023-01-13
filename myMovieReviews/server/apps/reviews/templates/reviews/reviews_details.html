@@ -3,6 +3,8 @@
 
 <h2>{{ review.title }}</h2>
 
+<a href="/reviews/{{ review.id }}/update">수정</a>
+
 <form action="/reviews/{{ review.id }}/delete" method="post">
   {% csrf_token %}
   <input type="submit" value="삭제" />

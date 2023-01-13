@@ -1,0 +1,45 @@
+<a href="/">myMoviereviews</a>
+<a href="/reviews/create">Add a New Review</a>
+
+<h2>Movie review 🍿</h2>
+
+<form action="/reviews/{{ review.id }}/update" method="post">
+  {% csrf_token %}
+  <span>제목:</span>
+  <input name="title" value="{{ review.title }}" />
+  <br />
+  <br />
+  <span>개봉년도:</span>
+  <input name="year" value="{{ review.year }}" />
+  <br />
+  <br />
+  <span>장르:</span>
+  <input name="genre" value="{{ review.genre }}" />
+  <br />
+  <br />
+  <span>별점:</span>
+  <input name="rating" value="{{ review.rating }}" />
+  <br />
+  <br />
+  <span>러닝타임:</span>
+  <input name="running_time" value="{{ review.running_time }}" />
+  <br />
+  <br />
+  <span>리뷰:</span>
+  <br />
+  <br />
+  <textarea name="content">{{ review.content }}</textarea>
+  <br />
+  <br />
+  <span>감독:</span>
+  <input name="director" value="{{ review.director }}" />
+  <br />
+  <br />
+  <span>주연:</span>
+  <input name="main_actors" value="{{ review.main_actors }}" />
+  <br />
+  <br />
+  <div>
+    <input type="submit" value="Save" />
+  </div>
+</form>
