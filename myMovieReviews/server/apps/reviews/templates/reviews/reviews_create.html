@@ -1,0 +1,45 @@
+<a href="/">myMoviereviews</a>
+<a href="/reviews/create">Add a New Review</a>
+
+<h2>Movie review 🍿</h2>
+
+<form action="/reviews/create" method="post">
+  {% csrf_token %}
+  <span>제목:</span>
+  <input name="title" />
+  <br />
+  <br />
+  <span>개봉년도:</span>
+  <input name="year" />
+  <br />
+  <br />
+  <span>장르:</span>
+  <input name="genre" />
+  <br />
+  <br />
+  <span>별점:</span>
+  <input name="rating" />
+  <br />
+  <br />
+  <span>러닝타임:</span>
+  <input name="running_time" />
+  <br />
+  <br />
+  <span>리뷰:</span>
+  <br />
+  <br />
+  <textarea name="content"></textarea>
+  <br />
+  <br />
+  <span>감독:</span>
+  <input name="director" />
+  <br />
+  <br />
+  <span>주연:</span>
+  <input name="main_actors" />
+  <br />
+  <br />
+  <div>
+    <input type="submit" value="Save" />
+  </div>
+</form>

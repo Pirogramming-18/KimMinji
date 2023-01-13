@@ -1,0 +1,9 @@
+<a href="/">myMoviereviews</a>
+<a href="/reviews/create">Add a New Review</a>
+
+{% for review in reviews %}
+<h2><a href="/reviews/{{ review.pk }}">{{ review.title }}</a></h2>
+<p>개봉년도: {{ review.year }}</p>
+<p>장르: {{ review.genre }}</p>
+<p>별점: {{ review.rating }}</p>
+{% endfor %}
